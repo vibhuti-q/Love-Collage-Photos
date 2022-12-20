@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg">
+
+    <HorizontalScrollView
+        android:id="@+id/hsvtom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color0tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color1tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#696969" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color2tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#eee8aa" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color3tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#f4a460" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color4tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#8470ff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color5tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#0000ff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color6tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#00ffff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color7tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#00ff00" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color8tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#ffff00" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color9tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#cd5c5c" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color10tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#ff7f00" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color11tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#ff0000" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color12tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#ff1493" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color13tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#cd00cd" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color14tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#ecab53" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color15tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#c0c0c0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color16tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#008080" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color17tom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#ffcc99" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</FrameLayout>

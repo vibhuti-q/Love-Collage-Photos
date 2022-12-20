@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutGalleryToptom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_top_bar"
+        android:padding="@dimen/padding_normal">
+
+        <ImageButton
+            android:id="@+id/imageButtonEditorResultBacktom"
+            style="@style/TopLeftImageButton"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button_tom" />
+
+        <TextView
+            style="@style/TopTitleTextView"
+            android:text="@string/title_editor_result_top" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/framePhotoGallerytom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutEditorResultBottomtom"
+        android:layout_below="@+id/relativeLayoutGalleryToptom"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/editorResultImageViewtom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutEditorResultBottomtom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adViewNEWtom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="70.0dip">
+
+        <include layout="@layout/include_editor_result_bottom_tom" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/adViewNEWtom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/banner_ad_common_tom" />
+
+    </LinearLayout>
+
+</RelativeLayout>

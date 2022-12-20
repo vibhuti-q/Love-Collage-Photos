@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.lovephotos.collageeditor.model.PermissionInstructionModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivStoragetom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            tools:src="@drawable/ic_storage_tom" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStorageHeadertom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_toEndOf="@+id/ivStoragetom"
+            android:text="@{data.title}"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="HardcodedText"
+            tools:text="Title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvStorageHeadertom"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_toEndOf="@+id/ivStoragetom"
+            android:textColor="@color/descriprion_text_color"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText"
+            tools:text="Description" />
+
+    </RelativeLayout>
+
+</layout>

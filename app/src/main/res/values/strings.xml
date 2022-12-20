@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="app_name">Love Collage Photo Editor</string>
+    <string name="app_id">7041</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="title_editor_result_top">Share</string>
+    <string name="title_editor_collage_button">Love Collage Photo Editor</string>
+    <string name="title_editor_share_button">Share Photo</string>
+
+    <string name="square_lib_footer_crop">Gallery</string>
+    <string name="square_lib_footer_tools">Effect</string>
+    <string name="square_lib_footer_Frame">Frame</string>
+    <string name="square_lib_footer_sticker">Sticker</string>
+    <string name="square_lib_footer_text">Text</string>
+
+    <string name="mirror_lib_footer_edit">@string/save_image_lib_footer_edit</string>
+    <string name="save_image_lib_footer_edit">Edit</string>
+    <string name="mirror_lib_footer_effect">@string/save_image_lib_footer_effect</string>
+    <string name="mirror_lib_footer_frame">@string/save_image_lib_Frame</string>
+    <string name="mirror_lib_footer_mirror">@string/save_image_lib_footer_mirror</string>
+    <string name="mirror_lib_footer_ratio">@string/save_image_lib_footer_ratio</string>
+    <string name="mirror_lib_footer_shape">@string/save_image_lib_footer_shape</string>
+    <string name="mirror_lib_footer_sticker">@string/save_image_lib_footer_sticker</string>
+    <string name="mirror_lib_footer_text">@string/save_image_lib_footer_text</string>
+
+    <string name="save_image_lib_Frame">Frame</string>
+    <string name="save_image_lib_footer_effect">Effect</string>
+    <string name="save_image_lib_footer_mirror">Mirror</string>
+    <string name="save_image_lib_footer_ratio">Ratio</string>
+    <string name="save_image_lib_footer_shape">Shape</string>
+    <string name="save_image_lib_footer_sticker">Sticker</string>
+    <string name="save_image_lib_footer_text">Text</string>
+
+    <string name="directory">/Love Collage Photo Editor/</string>
+    <string name="save_image_lib_loading_error_message">Could not load the photo, please use another GALLERY app!</string>
+
+    <string name="showingad">Showing Ad</string>
+    <string name="advertizment">Advertisement</string>
+    <string name="contact_us">Contact us</string>
+    <string name="cancel">Cancel</string>
+    <string name="something_went_wrong">Something went wrong. Please try again</string>
+    <string name="internet_error">Slow or no internet connections. Please check your internet settings.</string>
+    <string name="nointernet">No Internet</string>
+    <string name="tryagain">Try Again</string>
+
+</resources>

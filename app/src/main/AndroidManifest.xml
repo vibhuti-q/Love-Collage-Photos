@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lovephotos.collageeditor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="com.lovephotos.collageeditor.TomCollageApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:ignore="UnusedAttribute,HardcodedDebugMode">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.lovephotos.collageeditor.stpnfncmakads_tom.activity_tom.TommSplashActivity"
+            android:exported="true"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity"
+            android:theme="@style/splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.lovephotos.collageeditor.stpnfncmakads_tom.activity_tom.TomAppUpdateActivity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.stpnfncmakads_tom.activity_tom.TomWeMovedActivity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.stpnfncmakads_tom.activity_tom.TomMaintenanceActivity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.stpnfncmakads_tom.activity_tom.TomStartActivity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.stpnfncmakads_tom.activity_tom.TomDashboardActivity"
+
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.stpnfncmakads_tom.activity_tom.TomExit_KDL_Activity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.activity_tom.TomHomeActivity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.activity_tom.TomTextActivitytom"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.activity_tom.TomEditActivity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.activity_tom.TomShareActivity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.activity_tom.TomSettingsActivity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.mirrorlib_tom.TomMirrorShareActivity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.collage_tom.TomLayoutFrame"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.collage_tom.TomChoiceFrameActivityStyle"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <activity
+            android:name="com.lovephotos.collageeditor.collage_tom.TomCustomGalleryActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="collage_maker.ACTION_PICK" />
+                <action android:name="collage_maker.ACTION_MULTIPLE_PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.lovephotos.collageeditor.activity_tom.TomMyCreationActivity"
+            android:configChanges="uiMode"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,NonResizeableActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+    </application>
+
+</manifest>

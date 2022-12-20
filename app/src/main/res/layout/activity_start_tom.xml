@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_drawable_tom"
+        tools:context=".ui.activity.core.StartActivity">
+
+        <LinearLayout
+            android:id="@+id/nadViewtom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/native_ad_common_tom" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStarttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/ssp_semibold"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:text="NEXT"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="0dp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</layout>

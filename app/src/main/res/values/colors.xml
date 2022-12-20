@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E32130</color>
+    <color name="colorPrimaryLight">#E32130</color>
+    <color name="colorPrimaryDark">#E32130</color>
+    <color name="colorAccent">#E32130</color>
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+    <color name="square_footer_button_color_normal">#ff020608</color>
+    <color name="square_footer_button_color_pressed">@color/colorPrimary</color>
+
+    <color name="aviary_background_color">#ff141619</color>
+
+    <color name="color_main_bg">#fff9f4ee</color>
+    <color name="more_back">#90BBE0E9</color>
+    <color name="color_top_bar">@color/colorPrimary</color>
+    <color name="color_page_indicator_fill_color">@color/colorPrimary</color>
+    <color name="color_page_indicator_color">#4c58585a</color>
+    <color name="color_gird_item_bg">#ffd5d5d5</color>
+    <color name="color_primary">@color/colorPrimary</color>
+    <color name="color_primary_dark">@color/colorPrimaryDark</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!--<color name="colorPrimary">#ff5a00</color>
+    <color name="colorAccent">#ffff9205</color>-->
+
+    <color name="transparent">#00000000</color>
+    <color name="mirror_footer_button_color_normal">#ff020608</color>
+    <color name="mirror_tool_background_color">#ff252324</color>
+    <color name="footer_button_color_pressed">@color/colorPrimary</color>
+    <color name="lib_adjustment_background_color">#ff252324</color>+
+
+    <color name="main_bg">#fff9f4ee</color>
+
+    <color name="descriprion_text_color">#FF58585a</color>
+
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="payout_bg">#f5f5f5</color>
+    <color name="light_gray">#e5e5e5</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="red">#FFFF0000</color>
+    <color name="colorGray">#C9C9C9</color>
+</resources>

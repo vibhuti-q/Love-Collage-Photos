@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aviary_background_color"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbartom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_primary">
+
+        <ImageButton
+            android:id="@+id/btn_canceltom"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back_button_tom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:text="Photo Editor"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/btn_donetom"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ok_button_tom" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/framePhotoGallerytom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/all_gallerytom"
+        android:layout_below="@+id/toolbartom"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/imageblurtom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/imagetom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/frameImagetom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.xiaopo.flying.sticker.StickerView
+                android:id="@+id/sticker_viewtom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/all_gallerytom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/square_footertom"
+        android:layout_centerHorizontal="true">
+
+        <Gallery
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gallery_strip_tom"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:spacing="5dp"
+            android:visibility="gone" />
+
+        <Gallery
+            android:id="@+id/frameGallerytom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gallery_strip_tom"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:spacing="5dp"
+            android:visibility="gone" />
+
+        <Gallery
+            android:id="@+id/filterGallerytom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gallery_strip_tom"
+            android:spacing="5dp"
+            android:visibility="gone" />
+
+        <Gallery
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gallery_strip_tom"
+            android:spacing="5dp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_viewtom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gallery_strip_tom"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/square_footertom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_square_picturetom"
+                style="@style/square_footer_imagebutton_style"
+                android:drawableTop="@drawable/picture_tom"
+                android:background="@drawable/buttonshape_tom"
+                android:text="@string/square_lib_footer_crop" />
+
+            <Button
+                android:id="@+id/button_square_frametom"
+                style="@style/square_footer_imagebutton_style"
+                android:drawableTop="@drawable/mirror_frame_tom"
+                android:background="@drawable/buttonshape_tom"
+                android:text="@string/square_lib_footer_Frame" />
+
+            <Button
+                android:id="@+id/button_square_effecttom"
+                style="@style/square_footer_imagebutton_style"
+                android:drawableTop="@drawable/mirror_effect_tom"
+                android:background="@drawable/buttonshape_tom"
+                android:text="@string/square_lib_footer_tools" />
+
+            <Button
+                android:id="@+id/button_mirror_stickertom"
+                style="@style/square_footer_imagebutton_style"
+                android:background="@drawable/buttonshape_tom"
+                android:drawableTop="@drawable/sticker_snap_tom"
+                android:text="@string/square_lib_footer_sticker" />
+
+            <Button
+                android:id="@+id/button_square_texttom"
+                style="@style/square_footer_imagebutton_style"
+                android:background="@drawable/buttonshape_tom"
+                android:drawableTop="@drawable/mirror_text_icon_tom"
+                android:text="@string/square_lib_footer_text" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

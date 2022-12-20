@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbartom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/option_menutom"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|end"
+            android:layout_margin="10dp"
+            android:src="@drawable/menu_tom" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/montagens_show_casetom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbartom"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:padding="0.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/banner_tom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adLAyouttom"
+        android:layout_below="@+id/montagens_show_casetom"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/montagens_sizetom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/photoeditor_tom" />
+
+        <ImageView
+            android:id="@+id/montagens_collagetom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/collageeditor_tom" />
+
+        <ImageView
+            android:id="@+id/montagens_mirrortom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/mirroreditor_tom" />
+
+        <ImageView
+            android:id="@+id/montagens_mycreationtom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/my_creation_tom" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/adLAyouttom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/banner_containertom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/adViewtom"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/Image_overlayadviewtom"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:clickable="false"
+            android:orientation="vertical"
+            android:src="@android:color/transparent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

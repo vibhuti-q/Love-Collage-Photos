@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbartom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_primary"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="80">
+
+        <ImageButton
+            android:id="@+id/back_btntom"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/back_button_tom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:text="Collage Editor"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/btn_donetom"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/ok_button_tom" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/spacer01tom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:background="@color/main_bg"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="80" />
+
+    <FrameLayout
+        android:id="@+id/framePhotoGallerytom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:id="@+id/lsavetom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:weightSum="90">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:orientation="vertical">
+
+                <com.lovephotos.collageeditor.collage_tom.Tomcustom_imageviewtom
+                    android:id="@+id/pic0tom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/image_view_bg_tom"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic_default_tom" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:orientation="horizontal"
+                android:weightSum="90">
+
+                <com.lovephotos.collageeditor.collage_tom.Tomcustom_imageviewtom
+                    android:id="@+id/pic1tom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/image_view_bg_tom"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic_default_tom" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+                    android:orientation="vertical"
+                    android:weightSum="60">
+
+                    <com.lovephotos.collageeditor.collage_tom.Tomcustom_imageviewtom
+                        android:id="@+id/pic2tom"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="30"
+                        android:background="@drawable/image_view_bg_tom"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pic_default_tom" />
+
+                    <com.lovephotos.collageeditor.collage_tom.Tomcustom_imageviewtom
+                        android:id="@+id/pic3tom"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:background="@drawable/image_view_bg_tom"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pic_default_tom" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/frameImagetom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.xiaopo.flying.sticker.StickerView
+                android:id="@+id/sticker_viewtom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/all_gallerytom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2.2">
+
+        <Gallery
+            android:id="@+id/frameGallerytom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gallery_strip_tom"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:spacing="5dp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_viewtom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gallery_strip_tom"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/spacer1tom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <include
+                layout="@layout/color_picker_tom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ViewSwitcher
+        android:id="@+id/viewSwitchertom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/aviary_background_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="HardcodedText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/aviary_background_color"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_imagetom"
+                style="@style/square_footer_imagebutton_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="20"
+                android:background="@drawable/buttonshape_tom"
+                android:drawableTop="@drawable/picture_tom"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:text="Photo" />
+
+            <Button
+                android:id="@+id/back_imagetom"
+                style="@style/square_footer_imagebutton_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="20"
+                android:background="@drawable/buttonshape_tom"
+                android:drawableTop="@drawable/back_image_tom"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:text="Reset" />
+
+            <Button
+                android:id="@+id/change_bgColortom"
+                style="@style/square_footer_imagebutton_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="20"
+                android:background="@drawable/buttonshape_tom"
+                android:drawableTop="@drawable/change_bg_tom"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:text="BG" />
+
+            <Button
+                android:id="@+id/button_square_frametom"
+                style="@style/square_footer_imagebutton_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="20"
+                android:background="@drawable/buttonshape_tom"
+                android:drawableTop="@drawable/mirror_frame_tom"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:text="@string/square_lib_footer_Frame" />
+
+            <Button
+                android:id="@+id/button_mirror_stickertom"
+                style="@style/square_footer_imagebutton_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="20"
+                android:background="@drawable/buttonshape_tom"
+                android:drawableTop="@drawable/sticker_snap_tom"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:text="@string/square_lib_footer_sticker" />
+
+            <Button
+                android:id="@+id/button_square_texttom"
+                style="@style/square_footer_imagebutton_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="20"
+                android:background="@drawable/buttonshape_tom"
+                android:drawableTop="@drawable/mirror_text_icon_tom"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:text="@string/square_lib_footer_text" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/aviary_background_color"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            tools:ignore="HardcodedText">
+
+            <ImageButton
+                android:id="@+id/backViewtom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_tom"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_view_tom" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/replaceImagetom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvReplacetom"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center|bottom"
+                    android:background="@drawable/buttonshape_tom"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_5sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/replace_tom" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvReplacetom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Replace"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/rotateRighttom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvRotateRtom"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center|bottom"
+                    android:background="@drawable/buttonshape_tom"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_5sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/rotate_right_90_tom" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRotateRtom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Rot R"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/rotateLefttom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvRotateLtom"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center|bottom"
+                    android:background="@drawable/buttonshape_tom"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_5sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/rotate_left_90_tom" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRotateLtom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Rot L"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/verticalFliptom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvVFliptom"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center|bottom"
+                    android:background="@drawable/buttonshape_tom"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_5sdp"
+                    android:rotation="90"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_flip_tom" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvVFliptom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="V Flip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/horizontalFliptom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvHFliptom"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center|bottom"
+                    android:background="@drawable/buttonshape_tom"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_5sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_flip_tom" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvHFliptom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="H Flip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <!--<ImageButton
+                android:id="@+id/rotateRight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonshape"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rotate_right_90" />
+
+            <ImageButton
+                android:id="@+id/rotateLeft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rotate_left_90" />
+
+            <ImageButton
+                android:id="@+id/verticalFlip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/vertical_flip" />
+
+            <ImageButton
+                android:id="@+id/horizontalFlip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape"
+                android:scaleType="fitCenter"
+                android:src="@drawable/horizontal_flip" />-->
+
+        </LinearLayout>
+
+    </ViewSwitcher>
+
+</LinearLayout>

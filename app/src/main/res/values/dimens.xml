@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_normal">5.0dip</dimen>
+    <dimen name="font_mlarge">22.0dip</dimen>
+    <dimen name="square_footer_button_padding">3.0dip</dimen>
+    <dimen name="square_footer_button_style_min_width">60.0dip</dimen>
+    <dimen name="square_footer_button_text_size">10.0sp</dimen>
+
+    <dimen name="mirror_footer_button_padding">3.0dip</dimen>
+    <dimen name="mirror_button_padding">4.0dip</dimen>
+    <dimen name="mirror_footer_button_text_size">10.0sp</dimen>
+    <dimen name="mirror_ratio_button_height">60.0dip</dimen>
+    <dimen name="mirror_ratio_button_width">60.0dip</dimen>
+    <dimen name="mirror_ratio_text_size">12.0sp</dimen>
+
+    <dimen name="photo_width">100.0dip</dimen>
+    <dimen name="photo_height">100.0dip</dimen>
+
+</resources>

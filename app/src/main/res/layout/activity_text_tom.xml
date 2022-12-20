@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbartom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_primary">
+
+        <ImageButton
+            android:id="@+id/btn_canceltom"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/back_button_tom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:text="Text Editor"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/btn_donetom"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/ok_button_tom" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbartom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/buttonLayouttom">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/allLayouttom">
+
+                    <RelativeLayout
+                        android:id="@+id/textviewLayouttom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewtom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/_6sdp"
+                            android:text="@string/app_name"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_27ssp" />
+
+                    </RelativeLayout>
+
+                </ScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/allLayouttom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/fontLayouttom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/fontfacelayouttom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/color_primary"
+                            android:orientation="horizontal"
+                            android:weightSum="4.0">
+
+                            <ImageButton
+                                android:id="@+id/btn_normalfonttom"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/btn_normal_hover_tom" />
+
+                            <ImageButton
+                                android:id="@+id/btn_boldfonttom"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/btn_bold_tom" />
+
+                            <ImageButton
+                                android:id="@+id/btn_italicfonttom"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/btn_italics_tom" />
+
+                            <ImageButton
+                                android:id="@+id/btn_bolditalicfonttom"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/btn_bold_italics_tom" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_above="@+id/seekBartom"
+                            android:background="#000" />
+
+                        <SeekBar
+                            android:id="@+id/seekBartom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fontfacelayouttom"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:max="50"
+                            android:maxHeight="2.0dip"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:progress="35"
+                            android:progressDrawable="@drawable/seekbar_style_tom"
+                            android:thumb="@drawable/adjust_button_tom" />
+
+                        <Gallery
+                            android:id="@+id/fontGallerytom"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/seekBartom"
+                            android:background="@android:color/darker_gray"
+                            android:padding="3dp"
+                            android:spacing="5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/colorLayouttom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/colorCheckBoxtom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Multi Color"
+                            tools:ignore="HardcodedText" />
+
+                        <SeekBar
+                            android:id="@+id/textOpacitySeekBartom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_toEndOf="@+id/colorCheckBoxtom"
+                            android:max="100"
+                            android:maxHeight="2.0dip"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/seekbar_style_tom"
+                            android:thumb="@drawable/adjust_button_tom" />
+
+                        <LinearLayout
+                            android:id="@+id/colorSectionChoicetom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/colorCheckBoxtom"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp">
+
+                            <ImageButton
+                                android:id="@+id/btn_singleColortom"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_color1_hover_tom" />
+
+                            <ImageButton
+                                android:id="@+id/btn_multiColortom"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_color2_tom" />
+
+                        </LinearLayout>
+
+                        <Gallery
+                            android:id="@+id/colorGallerytom"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_below="@+id/colorSectionChoicetom"
+                            android:background="@android:color/darker_gray"
+                            android:padding="3dp"
+                            android:spacing="5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/textStyleLayouttom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/shadowLayouttom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0">
+
+                                <SeekBar
+                                    android:id="@+id/shadwoXYSeekBartom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:max="100"
+                                    android:maxHeight="2.0dip"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingEnd="@dimen/_10sdp"
+                                    android:progress="50"
+                                    android:progressDrawable="@drawable/seekbar_style_tom"
+                                    android:thumb="@drawable/adjust_button_tom" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0">
+
+                                <SeekBar
+                                    android:id="@+id/shadowRadiosSeekBartom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:max="100"
+                                    android:maxHeight="2.0dip"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingEnd="@dimen/_10sdp"
+                                    android:progressDrawable="@drawable/seekbar_style_tom"
+                                    android:thumb="@drawable/adjust_button_tom" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Gallery
+                            android:id="@+id/shadowcolorGallerytom"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_below="@+id/shadowLayouttom"
+                            android:background="@android:color/darker_gray"
+                            android:padding="3dp"
+                            android:spacing="5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/TextbackgroundLayouttom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/BgcolorCheckBoxtom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Use Multi Color" />
+
+                        <SeekBar
+                            android:id="@+id/paddingSeekBartom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_toEndOf="@+id/BgcolorCheckBoxtom"
+                            android:max="100"
+                            android:maxHeight="2.0dip"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:progressDrawable="@drawable/seekbar_style_tom"
+                            android:thumb="@drawable/adjust_button_tom" />
+
+                        <LinearLayout
+                            android:id="@+id/BgcolorSectionChoicetom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/BgcolorCheckBoxtom"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp">
+
+                            <ImageButton
+                                android:id="@+id/btn_BgsingleColortom"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_color1_hover_tom" />
+
+                            <ImageButton
+                                android:id="@+id/btn_BgmultiColortom"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_color2_tom" />
+
+                        </LinearLayout>
+
+                        <Gallery
+                            android:id="@+id/colorGalleryBgtom"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_below="@+id/BgcolorSectionChoicetom"
+                            android:background="@android:color/darker_gray"
+                            android:padding="3dp"
+                            android:spacing="5dp" />
+
+                        <Gallery
+                            android:id="@+id/patternGallerytom"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_below="@+id/colorGalleryBgtom"
+                            android:background="@android:color/darker_gray"
+                            android:padding="3dp"
+                            android:spacing="5dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_above="@+id/allLayouttom"
+                    android:background="#000" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayouttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_primary"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/inputKettom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_edit_text_selection_tom" />
+
+            <ImageButton
+                android:id="@+id/btn_fonttom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_text_style_hover_tom" />
+
+            <ImageButton
+                android:id="@+id/btn_textColortom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_text_color_tom" />
+
+            <ImageButton
+                android:id="@+id/btn_textStyletom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_text_glow_tom" />
+
+            <ImageButton
+                android:id="@+id/btn_textBgtom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_text_bg_tom" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/buttonLayouttom"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
